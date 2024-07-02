@@ -28,10 +28,19 @@ public class OpenSiteTest {
       mainPage.openSite();
 
         String expectedTitle = "The Connected Shop - Smart Locks, Smart Sensors, Smart Home & Office";
-        String actualTitle = driver.getTitle();
+        String actualTitle = mainPage.getTitle();
         Assert.assertEquals(actualTitle,expectedTitle);
 
 
+    }
+    @Test
+
+
+    public void currentUrlGet () {
+        mainPage.openSite();
+        String expectedUrl= "https://theconnectedshop.com/";
+        String actualUrl = mainPage.getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl);
     }
 
     @After

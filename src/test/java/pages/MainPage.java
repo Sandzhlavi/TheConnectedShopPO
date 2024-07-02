@@ -27,12 +27,12 @@ private final WebDriver driver;
 
     }
     public String getTitle () {
-        return getTitle();
+        return driver.getTitle();
 
     }
 
     public String getCurrentUrl () {
-        return getCurrentUrl();
+        return driver.getCurrentUrl();
 
     }
 

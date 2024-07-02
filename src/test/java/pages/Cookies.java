@@ -8,9 +8,7 @@ public class Cookies {
 
     private WebDriver driver;
 
-    private By acceptCookie = By.xpath("//*[@id=\"shopify-pc__banner__btn-accept\"]");
-      By newsletterPopup = By.cssSelector("#shopify-section-popup > aside");
-    private  By newsletterFormInput= By.cssSelector("#newsletter-popup > input.Form__Input");
+    private final By acceptCookie = By.xpath("//*[@id=\"shopify-pc__banner__btn-accept\"]");
 
     public Cookies (WebDriver driver) {
         this.driver = driver;
@@ -25,20 +23,9 @@ public class Cookies {
         WebElement cookie = driver.findElement(By.xpath("//*[@id=\"shopify-pc__banner__styles\"]"));
         cookie.isDisplayed();
 
-
     }
 
-    public void newsletterClose () {
-        WebElement newsletter = driver.findElement(newsletterPopup);
-        newsletter.isDisplayed();
-        WebElement fillTheFormNewsletter= driver.findElement(newsletterFormInput);
-        fillTheFormNewsletter.sendKeys("strongmen@gmail.com");
-        fillTheFormNewsletter.click();
 
-
-
-
-    }
 
 
 }
