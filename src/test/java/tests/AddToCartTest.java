@@ -49,7 +49,9 @@ public void setup () {
 @Test
 public void testNewsletterPopupPresence() {
 
-    if pop.isDisplayed()) {
+    if (popups.isNewsletterShown())
+    {
+        System.out.println("Popup for newsletter subscription is displayed.");
 
     } else {
 

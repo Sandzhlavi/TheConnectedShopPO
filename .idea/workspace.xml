@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e781517-929b-4248-bb43-65e82c895966" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Popups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CheckingPopupsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Cookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Popups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Popups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddToCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/OpenSiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/OpenSiteTest.java" afterDir="false" />
     </list>
@@ -36,27 +35,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.AddToCart.addToCart.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddToCart.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddToCartTest.addToCart.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddToCartTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddToCartTest.newsletterPopupClose.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OpenSiteTest.currentUrlGet.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OpenSiteTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SearchTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.tests in TheConnectedShopPO.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.AddToCart.addToCart.executor": "Run",
+    "JUnit.AddToCart.executor": "Run",
+    "JUnit.AddToCartTest.addToCart.executor": "Run",
+    "JUnit.AddToCartTest.executor": "Run",
+    "JUnit.AddToCartTest.newsletterPopupClose.executor": "Run",
+    "JUnit.AddToCartTest.testNewsletterPopupPresence.executor": "Run",
+    "JUnit.CheckingPopupsTest.cookiesAcceptTest.executor": "Run",
+    "JUnit.CheckingPopupsTest.cookiesTest.executor": "Run",
+    "JUnit.CheckingPopupsTest.executor": "Run",
+    "JUnit.CheckingPopupsTest.popupsTest.executor": "Run",
+    "JUnit.OpenSiteTest.currentUrlGet.executor": "Run",
+    "JUnit.OpenSiteTest.executor": "Run",
+    "JUnit.SearchTest.executor": "Run",
+    "JUnit.tests in TheConnectedShopPO.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.OpenSiteTest.currentUrlGet">
-    <configuration name="AddToCartTest.addToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.CheckingPopupsTest">
+    <configuration name="AddToCartTest.testNewsletterPopupPresence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheConnectedShopPO" />
       <extension name="coverage">
         <pattern>
@@ -66,13 +73,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.AddToCartTest" />
-      <option name="METHOD_NAME" value="addToCart" />
+      <option name="METHOD_NAME" value="testNewsletterPopupPresence" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddToCartTest.newsletterPopupClose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckingPopupsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheConnectedShopPO" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +88,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AddToCartTest" />
-      <option name="METHOD_NAME" value="newsletterPopupClose" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckingPopupsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckingPopupsTest.cookiesAcceptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheConnectedShopPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckingPopupsTest" />
+      <option name="METHOD_NAME" value="cookiesAcceptTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckingPopupsTest.popupsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheConnectedShopPO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CheckingPopupsTest" />
+      <option name="METHOD_NAME" value="popupsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,43 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenSiteTest.currentUrlGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TheConnectedShopPO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.OpenSiteTest" />
-      <option name="METHOD_NAME" value="currentUrlGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests in TheConnectedShopPO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TheConnectedShopPO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OpenSiteTest.currentUrlGet" />
+        <item itemvalue="JUnit.CheckingPopupsTest" />
+        <item itemvalue="JUnit.CheckingPopupsTest.cookiesAcceptTest" />
+        <item itemvalue="JUnit.CheckingPopupsTest.popupsTest" />
         <item itemvalue="JUnit.OpenSiteTest" />
-        <item itemvalue="JUnit.tests in TheConnectedShopPO" />
-        <item itemvalue="JUnit.AddToCartTest.newsletterPopupClose" />
-        <item itemvalue="JUnit.AddToCartTest.addToCart" />
+        <item itemvalue="JUnit.AddToCartTest.testNewsletterPopupPresence" />
       </list>
     </recent_temporary>
   </component>
