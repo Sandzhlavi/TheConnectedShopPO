@@ -11,7 +11,7 @@ public class MainPage {
 
 private final WebDriver driver;
 
-    private final By buttonSearch = By.xpath("//*[@id=\"section-header\"]/div/div[3]/nav/ul/li[2]/a\"");
+    private final By buttonSearch= By.cssSelector ("#section-header > div > div:nth-child(3) > nav > ul > li:nth-child(2) > a");
     private final By searchInputField = By.xpath("//*[@id=\"Search\"]/div/div[1]/form/input[1]");
     private final By fingerPrintDoorLockProduct = By.xpath("//*[@id=\"shopify-section-collection-template\"]/section/div[4]/div[1]/div[2]/div[1]/div/div[3]/div/div/div/h2/a");
     private final By buttonAddToCart= By.xpath("//*[@id=\"product_form_6198418636972\"]/button");

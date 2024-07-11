@@ -3,13 +3,15 @@ package tests;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import pages.DriverManager;
 import pages.MainPage;
 import pages.Popups;
-import pages.WebDriverManager;
 
-import javax.swing.*;
 
 public class OpenSiteTest {
 
@@ -17,9 +19,9 @@ public class OpenSiteTest {
     private MainPage mainPage;
     private Popups popups;
 
-    @Before
+    @BeforeClass
     public void setup () {
-        driver= WebDriverManager.getDriver();
+        driver= DriverManager.getDriver();
         mainPage= new MainPage(driver);
         popups=new Popups(driver);
 
@@ -63,10 +65,10 @@ public class OpenSiteTest {
 
     }
 
-    @After
+    @AfterClass
 
     public void close () {
-     WebDriverManager.closeDriver();
+     DriverManager.closeDriver();
 
     }
 }

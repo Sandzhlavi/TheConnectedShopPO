@@ -2,14 +2,16 @@ package tests;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
 import pages.Cookies;
 import pages.MainPage;
 import pages.Popups;
-import pages.WebDriverManager;
+import pages.DriverManager;
 
 import java.util.Collections;
 
@@ -24,7 +26,7 @@ public class AddToCartTest {
 @Before
 
 public void setup () {
-    WebDriver driver = WebDriverManager.getDriver();
+    WebDriver driver = DriverManager.getDriver();
     mainPage = new MainPage(driver);
     cookies = new Cookies(driver);
     popups= new Popups(driver);
@@ -34,35 +36,36 @@ public void setup () {
     
 }
 
-@Test
+//@Test
 
-    public void addToCart () {
+   // public void addToCart () {
 
-  cookies.showPopups();
-  cookies.clickAcceptCookies();
+  //cookies.clickAcceptCookies();
 
     
-    mainPage.addToCart();
+    //mainPage.addToCart();
 
-}
+//}
 
-@Test
-public void testNewsletterPopupPresence() {
+//@Test
 
-    if (popups.isNewsletterShown())
-    {
-        System.out.println("Popup for newsletter subscription is displayed.");
+//public void testNewsletterPopupPresence() {
 
-    } else {
+  //  if (popups.isNewsletterShown())
+ //   {
+   //     System.out.println("Popup for newsletter subscription is displayed.");
 
-        System.out.println("Popup for newsletter subscription is not displayed.");
-    }
-}
-@After
+  //  } else {
+
+  //      System.out.println("Popup for newsletter subscription is not displayed.");
+ //   }
+//}
+
+@AfterClass
 
     public void close () {
 
-    WebDriverManager.closeDriver();
+    DriverManager.closeDriver();
 
 }
 

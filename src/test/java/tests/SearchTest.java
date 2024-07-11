@@ -3,10 +3,13 @@ package tests;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import pages.MainPage;
-import pages.WebDriverManager;
+import pages.DriverManager;
 
 public class SearchTest {
 
@@ -16,10 +19,10 @@ public class SearchTest {
 
 
 
-    @Before
+    @BeforeClass
 
     public void setup () {
-        driver = WebDriverManager.getDriver();
+        driver = DriverManager.getDriver();
         mainPage = new MainPage(driver);
         mainPage.openSite();
 
@@ -36,11 +39,11 @@ public class SearchTest {
 
         }
 
-        @After
+        @AfterClass
 
     public void close () {
 
-        WebDriverManager.closeDriver();
+        DriverManager.closeDriver();
 
         }
 

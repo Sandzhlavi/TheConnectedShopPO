@@ -15,6 +15,7 @@ public class Popups {
     private final By newsletterPopup = By.cssSelector("#shopify-section-popup > aside");
     private final By newsletterFormInput = By.cssSelector("#newsletter-popup > input.Form__Input");
     private final By closeNewsletterAd = By.className("NewsletterPopup__Close");
+    private final By newsletterSubscribe = By.cssSelector("#newsletter-popup > button");
 
     public Popups (WebDriver driver) {
     this.driver=driver;
@@ -35,6 +36,13 @@ public class Popups {
         emailInput.sendKeys(email);
 
 
+    }
+
+    public void subscribeForNewsletter () {
+
+        enterEmail("hellopeople@gmail.com");
+        WebElement subscribeNewsletter = driver.findElement(newsletterSubscribe);
+        subscribeNewsletter.click();
     }
 
     public void newsletterClose() {
